@@ -1,12 +1,15 @@
+body {
+    margin: auto;
+    width: 80%;
 
-
+}
 nav {
     display: flex;
     justify-content: space-between;
     margin: 10px;
     .nav-bar {
         display: flex;
-        gap: 10px;
+        gap: 30px;
         p {
             margin: 0;
             font-size: 8px;
