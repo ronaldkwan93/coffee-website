@@ -22,13 +22,13 @@
   </head>
   <body>
     <nav>
-      <i
+      <a href="./index.html"><i
         class="fa-solid fa-mug-hot fa-flip-horizontal"
         style="color: #faa196"
-      ></i>
+      ></i></a>
       <div class="nav-bar">
         <p>ABOUT</p>
-        <p>CONTACT</p>
+        <a href="./contact.html"><p>CONTACT</p></a>
       </div>
     </nav>
     <header>
@@ -37,7 +37,7 @@
           <h4>The Pink</h4>
           <h4>Coffee Corner</h4>
           <p>Best coffee in Melbourne</p>
-          <p class="review-box">See reviews</p>
+          <p class="review-box"><a href="#review_id">See reviews</a></p>
         </div>
       </div>
       <div class="header-div">
@@ -46,59 +46,63 @@
     </header>
     <section class="menu">
       <h1>Our Menu</h1>
-      <div class="menu-food-heading">
-        <span>▼ </span> <span>Food</span>
-      </div>
-      <div class="menu-food-subsection row1">
-        <div class="food-card">
-          <img src="./images/vanilla_cake.jpg" alt="Chocolate cupcake">
-          <h3> Chocolate cupcake</h3>
-          <div class="symbol-label">
-            <i class="fa-solid fa-leaf" style="color: #82a289;"></i> <span>Vegan</span>
-          </div>
-        </div>
-        <div class="food-card">
-          <img src="./images/donuts.jpg" alt="Chocolate cupcake">
-          <h3>Donuts</h3>
-          <div class="symbol-label">
-            <div><i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #82a289;"></i> Gluten Free</div>
-
-          </div>
-        </div>
-        <div class="food-card">
-          <img src="./images/raspberry_cupcake.jpg" alt="Chocolate cupcake">
-          <h3> Raspberry Cupcake</h3>
-          <div class="symbol-label">
-            <i class="fa-solid fa-leaf" style="color: #82a289;"></i>Vegan
-            <div><i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #82a289;"></i> Gluten Free</div>
-
-          </div>
-        </div>
-      </div>
-      <div class="menu-food-subsection row2">
-        <div class="food-card">
-          <img src="./images/vanilla_cake.jpg" alt="Chocolate cupcake">
-          <h3>Vanilla Cake</h3>
-          <div class="symbol-label">
-
-            <div><i class="fa-solid fa-egg" style="color: #82a289;"></i>Contains Eggs</div></div>
-          </div>
-        <div class="food-card">
-          <img src="./images/cheesecake.jpg" alt="Chocolate cupcake">
-          <h3>Cheescake</h3>
-          <div class="symbol-label">
-          <div><i class="fa-solid fa-egg" style="color: #82a289;"></i>Contains Eggs
+      <details>
+          <summary class="menu-food-heading">
+            <span>▼ </span> <span>Food</span>
+          </summary>
+        <div class="menu-food-subsection row1">
+          <div class="food-card">
+            <img src="./images/vanilla_cake.jpg" alt="Chocolate cupcake">
+            <h3> Chocolate cupcake</h3>
+            <div class="symbol-label">
+              <i class="fa-solid fa-leaf" style="color: #82a289;"></i> <span>Vegan</span>
             </div>
-            <div>
-              <i class="fa-solid fa-cow" style="color: #82a298;"></i> Contains Dairy
+          </div>
+          <div class="food-card">
+            <img src="./images/donuts.jpg" alt="Chocolate cupcake">
+            <h3>Donuts</h3>
+            <div class="symbol-label">
+              <div><i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #82a289;"></i> Gluten Free</div>
+  
+            </div>
+          </div>
+          <div class="food-card">
+            <img src="./images/raspberry_cupcake.jpg" alt="Chocolate cupcake">
+            <h3> Raspberry Cupcake</h3>
+            <div class="symbol-label">
+              <i class="fa-solid fa-leaf" style="color: #82a289;"></i>Vegan
+              <div><i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #82a289;"></i> Gluten Free</div>
+  
             </div>
           </div>
         </div>
+        <div class="menu-food-subsection row2">
+          <div class="food-card">
+            <img src="./images/vanilla_cake.jpg" alt="Chocolate cupcake">
+            <h3>Vanilla Cake</h3>
+            <div class="symbol-label">
+  
+              <div><i class="fa-solid fa-egg" style="color: #82a289;"></i>Contains Eggs</div></div>
+            </div>
+          <div class="food-card">
+            <img src="./images/cheesecake.jpg" alt="Chocolate cupcake">
+            <h3>Cheescake</h3>
+            <div class="symbol-label">
+            <div><i class="fa-solid fa-egg" style="color: #82a289;"></i>Contains Eggs
+              </div>
+              <div>
+                <i class="fa-solid fa-cow" style="color: #82a298;"></i> Contains Dairy
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
-      </div>
-      <div class="menu-food-heading">
-        <span>▼ </span> <span>Drinks</span>
-      </div>
+
+      </details>
+      <details>
+        <summary class="menu-food-heading">
+          <span>▼ </span> <span>Drinks</span>
+        </summary> 
       <div class="menu-food-subsection row1">
         <div class="food-card">
           <img src="./images/coffee.jpg" alt="flat white">
@@ -124,9 +128,89 @@
           </div>
         </div>
       </div>
+      </details>
     </section>
     
-    <section>Reviews</section>
-    <footer>Footer</footer>
+    <section class="review">
+      <h1 id="review_id">Reviews</h1>
+      <section class="review-row1">
+        <div class="review-card">
+          <div class="review-card-quote">
+            <div class="quote-left">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-card-words">
+              <p>
+                The Pink Coffee Corner is amazing! Cozy 
+                ambiance, perfect lattes, and friendly 
+                staff. The avocado toast is a must-try. 
+                Definitely coming back!</p>
+            </div>
+              <div class="quote-right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+          </div>
+          <div class="review-card-name-date">
+            <p>Sarah L.</p>
+            <p>8th July 2024</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-quote">
+            <div class="quote-left">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-card-words">
+              <p>
+                Great spot for coffee lovers. Smooth flat 
+                white and delicious cake. It can get 
+                crowded at lunchtime, but worth the visit 
+                for the quality and friendly service.</p>
+            </div>
+              <div class="quote-right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+          </div>
+          <div class="review-card-name-date">
+            <p>John M.</p>
+            <p>8th July 2024</p>
+          </div>
+        </div>
+      </section>
+      <section class="review-row2">
+        <div class="review-card">
+          <div class="review-card-quote">
+            <div class="quote-left">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-card-words">
+              <p>
+                The Pink Coffee Corner is my favorite! 
+                Perfect mocha, tasty almond croissant, 
+                and a welcoming atmosphere. Free Wi-Fi 
+                is a bonus. Can't wait to return!</p>
+            </div>
+              <div class="quote-right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+          </div>
+          <div class="review-card-name-date">
+            <p>Jenny B.</p>
+            <p>4th June 2023</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <i class="fa-solid fa-mug-hot fa-flip-horizontal" style="color: #ffffff;"></i> Copyright 2024
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

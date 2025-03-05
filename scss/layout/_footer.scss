@@ -1,0 +1,16 @@
+@use '../parital/variables' as v;
+@use '../parital/mixins' as m;
+
+.footer {
+    background-color: v.$color-background;
+    height: 5vh;
+    font-family: v.$font-primary;
+    color: white;
+    font-size: 0.5em;
+    .footer-container {
+        @include m.flex-between;
+        align-items: center; 
+        height: 100%; 
+        padding: 0px 20px;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../parital/variables' as v;
+
+form {
+    padding: 15px;
+    margin-top: 10px;
+    label {
+        font-family: v.$font-primary;
+        font-size: 0.5em;
+    }
+
+}
+

@@ -1,0 +1,25 @@
+@use '../parital/variables' as v;
+@use '../parital/mixins' as m;
+
+nav {
+    @include m.flex-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2px;
+    .nav-bar {
+      display: flex;
+      gap: 30px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      p {
+        margin: 0;
+        font-size: 8px;
+        font-family: v.$font-primary;
+        font-weight: bold;
+        font: italic;
+       
+      }
+    }
+  }

@@ -1,143 +1,15 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-  padding-bottom: 10px;
-  .nav-bar {
-    display: flex;
-    gap: 30px;
-    p {
-      margin: 0;
-      font-size: 8px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: bold;
-      font: italic;
-    }
-  }
-}
+@use './scss/parital/variables' as v;
 
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 198px;
+@use './scss/layout/navigation';
+@use './scss/layout/hero';
+@use './scss/layout/menu';
+@use './scss/layout/reviews';
+@use './scss/layout/footer';
+@use './scss/layout/form';
 
-  .header-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: #82a289;
-    color: white;
 
-    &:first-child {
-      .one {
-        text-align: left;
-        padding: 100px 20px;
-        h4 {
-          font-family: "Rammetto One", sans-serif;
-          margin-top: 2px;
-          margin-bottom: 2px;
-          font-weight: 100;
-        }
-        p {
-          font-family: "Open Sans", sans-serif;
-          font-size: 7px;
-          &:last-child {
-            border: 1px solid white;
-            text-align: center;
-            width: 42%;
-            padding: 2px;
-          }
-        }
-      }
-    }
 
-    &:last-child {
-      padding: 0;
-      .hero-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-}
 
-.menu {
-  width: 90%;
-  margin: auto;
-  h1 {
-    color: #faa196;
-    text-align: center;
-    font-family: "Rammetto One", sans-serif;
-    margin: 10px;
-    font-size: 1em;
-  }
-  .menu-food-heading {
-    background-color: #ebc9c4;
-    display: flex;
-    align-content: center;
-    margin-top: 10px;
-    span {
-      margin: 2px;
-      color: #404040;
-      font-family: "Open Sans", sans-serif;
-      font-weight: bold;
-      font: italic;
-      font-size: 0.5em;
-      padding-right: 5px;
-    }
-  }
-  .menu-food-subsection {
-    margin-top: 10px;
-    &.row1 {
-      display: flex; // Change to flex for horizontal layout
-      justify-content: space-between;
-      gap: 10px;
-    }
 
-    &.row2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
 
-      .food-card {
-        &:first-child {
-          grid-column: 1;
-        }
 
-        &:last-child {
-          grid-column: 3;
-        }
-      }
-    }
-
-    .food-card {
-      flex: 1;
-      padding: 5px;
-      text-align: center;
-      background-color: #ebc9c4;
-      height: 6.3em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      img {
-        width: 100%;
-        // padding: 0.2em;
-      }
-      h3 {
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
-        font-size: 0.1em;
-        margin: 0;
-      }
-      .symbol-label {
-        font-size: 5px;
-        padding-top: 1em;
-        display: flex;
-        gap: 2px;
-      }
-    }
-  }
-}
