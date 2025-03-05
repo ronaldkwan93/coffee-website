@@ -27,7 +27,7 @@ header .header-div {
   justify-content: center;
   align-items: center;
   flex: 1;
-  background-color: #82A289;
+  background-color: #82a289;
   color: white;
 }
 header .header-div:first-child .one {
@@ -57,6 +57,77 @@ header .header-div:last-child .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.menu {
+  width: 90%;
+  margin: auto;
+}
+.menu h1 {
+  color: #faa196;
+  text-align: center;
+  font-family: "Rammetto One", sans-serif;
+  margin: 10px;
+  font-size: 1em;
+}
+.menu .menu-food-heading {
+  background-color: #ebc9c4;
+  display: flex;
+  align-content: center;
+  margin-top: 10px;
+}
+.menu .menu-food-heading span {
+  margin: 2px;
+  color: #404040;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font: italic;
+  font-size: 0.5em;
+  padding-right: 5px;
+}
+.menu .menu-food-subsection {
+  margin-top: 10px;
+}
+.menu .menu-food-subsection.row1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.menu .menu-food-subsection.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.menu .menu-food-subsection.row2 .food-card:first-child {
+  grid-column: 1;
+}
+.menu .menu-food-subsection.row2 .food-card:last-child {
+  grid-column: 3;
+}
+.menu .menu-food-subsection .food-card {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+  background-color: #ebc9c4;
+  height: 6.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu-food-subsection .food-card img {
+  width: 100%;
+}
+.menu .menu-food-subsection .food-card h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.1em;
+  margin: 0;
+}
+.menu .menu-food-subsection .food-card .symbol-label {
+  font-size: 5px;
+  padding-top: 1em;
+  display: flex;
+  gap: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
