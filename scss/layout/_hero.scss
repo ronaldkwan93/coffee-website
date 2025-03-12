@@ -1,9 +1,15 @@
 @use '../parital/variables' as v;
 @use '../parital/mixins' as m;
+@use '../parital/media-mixins' as media;
+
 
 header {
     @include m.flex-between;
-    height: 198px;
+    min-height: 13.1em;
+    @include media.tablet {
+      min-height: 28em;
+    }
+
   
     .header-div {
       @include m.flex-center;
@@ -14,21 +20,39 @@ header {
       &:first-child {
         .one {
           text-align: left;
-          padding: 100px 20px;
+          padding: 20px;
           h4 {
             font-family: v.$font-accent;
             margin-top: 2px;
             margin-bottom: 2px;
             font-weight: 100;
+            @include media.tablet {
+              font-size: 2.5rem;
+            }
+            @include media.laptop {
+              font-size: 2.7rem;
+            }
           }
           p {
             font-family: v.$font-primary;
             font-size: 7px;
+            @include media.tablet {
+              font-size: 1em;
+            }
+            @include media.laptop {
+              font-size: 1.3em;
+            }
             &:last-child {
               border: 1px solid white;
               text-align: center;
               width: 42%;
               padding: 2px;
+              @include media.tablet {
+                border: 3px solid white;
+              }
+              @include media.laptop {
+                border: 3px solid white;
+              }
               a {
                 text-decoration: none;
                 color: inherit;

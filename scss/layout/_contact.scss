@@ -1,0 +1,30 @@
+@use '../parital/variables' as v;
+@use '../parital/mixins' as m;
+@use '../parital/media-mixins' as media;
+
+form {
+    @include media.tablet {
+        .contact-title {
+            font-size: 2.5em;
+        }
+        
+        label {
+            font-size: 1.5em;
+        }
+        button {
+            font-size: 1em;
+        }
+    }
+
+    @include media.laptop {
+        .contact-title {
+            font-size: 4.5em;
+        }
+        label {
+            font-size: 2.5em;
+        }
+        button {
+            font-size: 2em;
+        }
+    }
+}

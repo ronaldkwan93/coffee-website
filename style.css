@@ -5,9 +5,30 @@ nav {
   margin: auto;
   padding-bottom: 2px;
 }
+@media (min-width: 1024px) {
+  nav {
+    padding-top: 1em;
+  }
+}
+nav i {
+  font-size: 0.8em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav i {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+  }
+}
+@media (min-width: 1024px) {
+  nav i {
+    font-size: 2.1em;
+    padding-bottom: 0.2em;
+  }
+}
 nav .nav-bar {
   display: flex;
   gap: 30px;
+  padding-top: 0.2em;
 }
 nav .nav-bar a {
   text-decoration: none;
@@ -15,16 +36,31 @@ nav .nav-bar a {
 }
 nav .nav-bar p {
   margin: 0;
-  font-size: 8px;
+  font-size: 0.3em;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font: italic;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav .nav-bar p {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1024px) {
+  nav .nav-bar p {
+    font-size: 1em;
+  }
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  height: 198px;
+  min-height: 13.1em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    min-height: 28em;
+  }
 }
 header .header-div {
   display: flex;
@@ -36,7 +72,7 @@ header .header-div {
 }
 header .header-div:first-child .one {
   text-align: left;
-  padding: 100px 20px;
+  padding: 20px;
 }
 header .header-div:first-child .one h4 {
   font-family: "Rammetto One", sans-serif;
@@ -44,15 +80,45 @@ header .header-div:first-child .one h4 {
   margin-bottom: 2px;
   font-weight: 100;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .header-div:first-child .one h4 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-div:first-child .one h4 {
+    font-size: 2.7rem;
+  }
+}
 header .header-div:first-child .one p {
   font-family: "Open Sans", sans-serif;
   font-size: 7px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .header-div:first-child .one p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-div:first-child .one p {
+    font-size: 1.3em;
+  }
 }
 header .header-div:first-child .one p:last-child {
   border: 1px solid white;
   text-align: center;
   width: 42%;
   padding: 2px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .header-div:first-child .one p:last-child {
+    border: 3px solid white;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-div:first-child .one p:last-child {
+    border: 3px solid white;
+  }
 }
 header .header-div:first-child .one p:last-child a {
   text-decoration: none;
@@ -71,26 +137,53 @@ header .header-div:last-child .hero-img {
   width: 90%;
   margin: auto;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    padding-bottom: 2em;
+  }
+}
 .menu h1 {
   color: #faa196;
   text-align: center;
   font-family: "Rammetto One", sans-serif;
-  margin: 10px;
+  margin: 1em;
   font-size: 1em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu h1 {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .menu h1 {
+    font-size: 3em;
+  }
 }
 .menu .menu-food-heading {
   background-color: #ebc9c4;
   display: flex;
   align-content: center;
-  margin-top: 10px;
+  margin-top: 0.7em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu .menu-food-heading {
+    font-size: 1.8em;
+    padding: 0.3rem 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-food-heading {
+    font-size: 2.5em;
+    padding: 0.3rem 1rem;
+  }
 }
 .menu .menu-food-heading span {
   margin: 2px;
   color: #404040;
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font: italic;
-  font-size: 0.5em;
+  font-size: 0.6em;
   padding-right: 5px;
 }
 .menu .menu-food-subsection {
@@ -100,6 +193,11 @@ header .header-div:last-child .hero-img {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+}
+@media (min-width: 1024px) {
+  .menu .menu-food-subsection.row1 {
+    margin-top: 1.5em;
+  }
 }
 .menu .menu-food-subsection.row2 {
   display: grid;
@@ -114,16 +212,30 @@ header .header-div:last-child .hero-img {
 }
 .menu .menu-food-subsection .food-card {
   flex: 1;
-  padding: 5px;
+  padding: 0.4em;
   text-align: center;
   background-color: #ebc9c4;
-  height: 7em;
+  min-height: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .menu .menu-food-subsection .food-card img {
   width: 100%;
+  flex-grow: 1;
+  object-fit: contain;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu .menu-food-subsection .food-card img {
+    max-height: 75%;
+    padding-top: 2%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-food-subsection .food-card img {
+    max-height: 75%;
+    padding-top: 5%;
+  }
 }
 .menu .menu-food-subsection .food-card h3 {
   font-family: "Open Sans", sans-serif;
@@ -131,37 +243,123 @@ header .header-div:last-child .hero-img {
   font-size: 0.1em;
   margin: 0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu .menu-food-subsection .food-card h3 {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-food-subsection .food-card h3 {
+    font-size: 1.5em;
+  }
+}
 .menu .menu-food-subsection .food-card .symbol-label {
   font-size: 5px;
   padding-top: 1em;
   display: flex;
   gap: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu .menu-food-subsection .food-card .symbol-label {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-food-subsection .food-card .symbol-label {
+    font-size: 0.9em;
+  }
 }
 
 .review {
   background-color: #faa196;
   width: 100%;
-  height: 33dvh;
+  min-height: 13em;
+  margin-top: 1em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review {
+    min-height: 30em;
+  }
+}
+@media (min-width: 1024px) {
+  .review {
+    min-height: 40em;
+  }
 }
 .review h1 {
   font-family: "Rammetto One", sans-serif;
   text-align: center;
   color: whitesmoke;
   font-size: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .review h1 {
+    font-size: 3em;
+  }
 }
 .review .review-card {
   border: 1px solid white;
   width: 50%;
-  height: 8.5vh;
-  padding: 10px;
+  min-height: 4em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review .review-card {
+    width: 45%;
+    padding: 1em;
+    min-height: 7em;
+    border: 2px solid white;
+  }
+}
+@media (min-width: 1024px) {
+  .review .review-card {
+    width: 45%;
+    padding: 1em;
+    min-height: 7em;
+    border: 2px solid white;
+  }
 }
 .review .review-card .review-card-quote {
   display: flex;
   font-size: 6px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review .review-card .review-card-quote {
+    font-size: 0.9em;
+    width: 98%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .review .review-card .review-card-quote {
+    font-size: 1.2em;
+    width: 98%;
+    margin: auto;
+  }
+}
 .review .review-card .review-card-quote .review-card-words p {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review .review-card .review-card-quote .review-card-words p {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1024px) {
+  .review .review-card .review-card-quote .review-card-words p {
+    font-size: 0.9em;
+  }
 }
 .review .review-card .review-card-quote .quote-left {
   margin-top: 6px;
@@ -169,17 +367,26 @@ header .header-div:last-child .hero-img {
 }
 .review .review-card .review-card-quote .quote-right {
   align-self: flex-end;
-  margin-bottom: 8px;
+  margin-bottom: 1.5em;
 }
 .review .review-card .review-card-name-date {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 .review .review-card .review-card-name-date p {
   font-family: "Open Sans", sans-serif;
   font-size: 6px;
   font-weight: 100;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review .review-card .review-card-name-date p {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1024px) {
+  .review .review-card .review-card-name-date p {
+    font-size: 0.9em;
+  }
 }
 .review .review-row1 {
   display: flex;
@@ -187,6 +394,16 @@ header .header-div:last-child .hero-img {
   align-items: center;
   gap: 10px;
   padding: 0px 30px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review .review-row1 {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .review .review-row1 {
+    font-size: 1em;
+  }
 }
 .review .review-row2 {
   display: flex;
@@ -198,10 +415,22 @@ header .header-div:last-child .hero-img {
 
 .footer {
   background-color: #82a289;
-  height: 5vh;
+  height: 4em;
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 0.5em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    font-size: 0.8em;
+    height: 6em;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 1.2em;
+    height: 5em;
+  }
 }
 .footer .footer-container {
   display: flex;
@@ -209,6 +438,9 @@ header .header-div:last-child .hero-img {
   align-items: center;
   height: 100%;
   padding: 0px 20px;
+}
+.footer .footer-container i {
+  font-size: 1.8em;
 }
 
 form {
@@ -218,6 +450,29 @@ form {
 form label {
   font-family: "Open Sans", sans-serif;
   font-size: 0.5em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  form .contact-title {
+    font-size: 2.5em;
+  }
+  form label {
+    font-size: 1.5em;
+  }
+  form button {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  form .contact-title {
+    font-size: 4.5em;
+  }
+  form label {
+    font-size: 2.5em;
+  }
+  form button {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

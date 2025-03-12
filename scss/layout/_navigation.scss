@@ -1,25 +1,49 @@
 @use '../parital/variables' as v;
 @use '../parital/mixins' as m;
+@use '../parital/media-mixins' as media;
+
 
 nav {
     @include m.flex-between;
     width: 80%;
     margin: auto;
     padding-bottom: 2px;
+    @include media.laptop {
+      padding-top: 1em;
+    }
+    i {
+      font-size: 0.8em;
+      @include media.tablet {
+        font-size: 2em;
+        padding-bottom: 0.3em;
+      }
+      @include media.laptop {
+        font-size: 2.1em;
+        padding-bottom: 0.2em;
+      }
+    }
     .nav-bar {
       display: flex;
       gap: 30px;
+      padding-top: 0.2em;
       a {
         text-decoration: none;
         color: inherit;
       }
       p {
         margin: 0;
-        font-size: 8px;
+        font-size: 0.3em;
         font-family: v.$font-primary;
         font-weight: bold;
         font: italic;
        
+        @include media.tablet {
+          font-size: 0.8em;
+        }
+        @include media.laptop {
+          font-size: 1em;
+          
+        }
       }
     }
   }

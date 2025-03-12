@@ -1,16 +1,29 @@
 @use '../parital/variables' as v;
 @use '../parital/mixins' as m;
+@use '../parital/media-mixins' as media;
+
 
 .footer {
     background-color: v.$color-background;
-    height: 5vh;
+    height: 4em;
     font-family: v.$font-primary;
     color: white;
     font-size: 0.5em;
+    @include media.tablet {
+        font-size:0.8em;
+        height: 6em;
+    }
+    @include media.laptop {
+        font-size:1.2em;
+        height: 5em;
+    }
     .footer-container {
         @include m.flex-between;
         align-items: center; 
         height: 100%; 
         padding: 0px 20px;
+        i {
+            font-size: 1.8em;
+        }
     }
 }
